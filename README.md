@@ -8,19 +8,21 @@ You will need the following:
 
 GNU's WGet for Windows
 
+WGet must be installed in %UserProfile%\Documents\InternetTest\GnuWin32\bin\wget
+
 GNU's grep for Windows (Optional)
 
 # Usage
 ____________________________________________
 
-Install the dependencies. Place the .bat file inside of the /bin/ folder, that contains wget and grep. Create the InternetTestJob folder inside of the Documents Library. Rename all instances of [USER] in the script to your user folder. Customize the folders however you wish, if you want to have a different install / download location. Run the .bat file. Read the conditions, and agree to them by pressing any button. If you don't agree to the conditions set forth, click the X at the top, or hit CTRL-C to cancel.
+Install any dependencies listed, and run the .bat. Make sure to run the setup option first, then use the software's intended feature.
 
 # Viewing Results
 ___________________________________________
 
 First, find the logfile. You can do this yourself. It should be somewhere under AppData on a standard installation. Once that's done, type the following command:
 
-> grep "MB/s)" logfile 
+> grep "/s)" logfile 
 
 Grep will give you the time and date that the program ran at, and the average download speed of the file in MegaBytes.
 
